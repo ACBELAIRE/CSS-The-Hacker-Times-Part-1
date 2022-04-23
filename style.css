@@ -154,21 +154,7 @@ list-style-type: none;
 .more h4{
     font-family: Roboto Slab;;
 }
-.hvc{
-    width:  12em;
-    font-size: 22px;
-    margin-right: 2em;
-    margin-left: 1em;
-    align-items: center;
-}
-.hal{
-    width:  12em;
-    font-size: 22px;
-    margin-right: 2em;
-    margin-left: 1em;
-    align-items: center;
-}
-.bbt{
+.hvc,.hal,.bbt{
     width:  12em;
     font-size: 22px;
     margin-right: 2em;
