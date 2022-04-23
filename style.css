@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
+                                /*Body Information */
+body{
+    background-color: #eee;
+    font-family: Source Sans Pro;
+    margin: 3em;
+    color: black;
+}
+/*Newspaper Portion of Body Container/"SetUp"*/
+.newspaper-container{
+    width: 1100px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 2em;
+    background-color: white;
+    box-shadow: #ddd;
+    color: black;
+    border-radius: 15px;
+}
 
+/*All Header Information*/
 header{
     font-family: Abril Fatface;
     color:black
@@ -10,30 +29,52 @@ header h1{
         font-size: 5em;
         line-height: 40px;
 }
-
-body{
-    background-color: #eee;
-    font-family: Source Sans Pro;
-    margin: 3em;
-    color: black;
-}
 .date{
-        font-family: Source Sans Pro;
-        font-size: 24px;
-        color:black;
+    font-family: Source Sans Pro;
+    font-size: 24px;
+    color:black;
 }
-.front-page-article{
-    color: #dd3232;
-    
+
+/*Top Navigation Information*/
+
+.nav a{
+    color: #777
 }
-main h2{
+
+a:link{
+text-decoration: none;
+padding: 15px; 
+font-size: 20px;
+}
+
+.nav li{
+    display: inline-block 
+}
+
+.nav{
+list-style-type: none;
+ border-top: solid   rgb(226, 223, 223);
+ border-bottom:solid rgb(226, 223, 223);
+ border-width: 2px;
+ padding: 10px;
+ margin: auto;
+}
+/*More Article Section*/
+
+.front-page-article h2{
         color:black; 
         font-size: 36px ;
         font-family: Roboto Slab;
         line-height: .2 ;
         padding-top: 20px;
         }
-main p{
+.front-page-article h5{
+            color: #dd3232;
+            font-size: 20px;
+            font-family:  Abril Fatface;
+            
+        }
+.front-page-article p{
         color: black;
         font-size: 22px;
         float: right;
@@ -44,50 +85,17 @@ main p{
         text-align: justify;
         text-indent: 0;
     }
-main h5{
-        font-size: 20px;
-        font-family:  Abril Fatface;
-}
- .newspaper-container{
-        width: 1100px;
-        box-sizing: border-box;
-        margin: auto;
-        padding: 2em;
-        background-color: white;
-        box-shadow: #ddd;
-        color: black;
-        border-radius: 15px;
-    
-    }
 
- nav a{
-        color: #777
- }
- a:link{
-    text-decoration: none;
-    padding: 15px; 
-    font-size: 20px;
-}
- .nav li{
-        display: inline-block
-        
- }
- nav{
-    list-style-type: none;
-     border-top: solid   rgb(226, 223, 223);
-     border-bottom:solid rgb(226, 223, 223);
-     border-width: 2px;
-     margin: auto;
- }
-
+/*Will keep every "Section" w/in a div aligned..*/
   div section{
      display: inline-block;      
  }
 
+ /* main article image*/
 .computer{
         width: 100%;
 }
-
+                           /*More articles aligned */
 .tvs{
     width:  20em;
     font-size: 22px;
@@ -96,13 +104,11 @@ main h5{
     align-items: center;
     
 }
-.screen{
+ /*All Article Photos*/
+.screen,.caffeine{
     width: 100%;
 }
 
-.caffeine{
-    width: 100%;
-}
 .caff{
     width: 20em;
     font-size: 22px;
@@ -110,12 +116,13 @@ main h5{
     margin-left: 2em;
     align-items: center;
 }
+  /*Keep .more-articles Title same font*/
 
-.more-articles{
+  .more-articles{
     border-top:solid #777 thin;
     display: inline-block;
+  }
 
-}
 .more-articles h4{
         font-family: Roboto Slab;;
 }
@@ -140,4 +147,77 @@ main h5{
     padding-right: 1em;
      text-align: justify;
      text-indent: 0;
+}
+
+                           /* 3 additional articles aligned below*/
+
+.more h4{
+    font-family: Roboto Slab;;
+}
+.hvc{
+    width:  12em;
+    font-size: 22px;
+    margin-right: 2em;
+    margin-left: 1em;
+    align-items: center;
+}
+.hal{
+    width:  12em;
+    font-size: 22px;
+    margin-right: 2em;
+    margin-left: 1em;
+    align-items: center;
+}
+.bbt{
+    width:  12em;
+    font-size: 22px;
+    margin-right: 2em;
+    margin-left: 1em;
+    align-items: center;
+}
+ /* indented and justified caption/article*/
+.hvc p{
+    font-size: 16px;
+    float: right;
+    width: 5em
+     margin: 0.1em;
+     padding-left: 1em;
+     padding-right: 1em;
+     text-align: justify;
+}
+
+.hal p{
+    font-size: 16px;
+    float: right;
+    width: 5em
+     margin: 0.5em;
+     padding-left: 1em;
+     padding-right: 1em;
+     text-align: justify;
+}
+
+.bbt p{
+    font-size: 16px;
+    float: right;
+    width: 5em
+     margin: 0.5em;
+     padding-left: 1em;
+     padding-right: 1em;
+     text-align: justify;
+}
+                                            /* Navigation Footer*/
+.footer li{
+        display: inline-block;
+}
+.footer a{
+    color: #777
+}
+.footer{
+    list-style-type: none;
+     border-top: solid   rgb(226, 223, 223);
+     border-bottom:solid rgb(226, 223, 223);
+     border-width: 2px;
+     padding: 10px;
+     margin: auto;
+     text-align: center;
 }
